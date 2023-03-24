@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block content %}
+  <h2>Авторизация через Google</h2>
+  <a href="{% url 'social:begin' 'google-oauth2' %}">Войти с помощью Google</a>
+{% endblock %}
+</body>
+</html>
